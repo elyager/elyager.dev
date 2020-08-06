@@ -99,11 +99,19 @@ h3 {
   justify-content: flex-end;
   align-items: center;
 }
+
 .profile__image {
   width: 150px;
   height: 150px;
   margin: 0;
   border-radius: 50%;
+  box-shadow:
+    0 2px 1px rgba(0, 0, 0, 0.09),
+    0 4px 2px rgba(0, 0, 0, 0.09),
+    0 8px 4px rgba(0, 0, 0, 0.09),
+    0 16px 8px rgba(0, 0, 0, 0.09),
+    0 32px 16px rgba(0, 0, 0, 0.09),
+    0 64px 32px rgba(0, 0, 0, 0.09);
 }
 
 .social {
@@ -164,6 +172,7 @@ h3 {
 .social a:hover {
   color: var(--white);
 }
+
 .social a:hover::before {
   transform: translateY(0);
   transition: transform 0.25s ease-out;
@@ -193,6 +202,7 @@ hr:after {
     margin: 0 4rem;
     padding: 0;
   }
+
   .main__title {
     height: fit-content;
     width: fit-content;
@@ -204,6 +214,7 @@ hr:after {
     padding-right: 0;
     padding-top: 0;
   }
+
   .main__text p {
     background-color: var(--accent);
     color: white;
@@ -227,6 +238,7 @@ hr:after {
     width: 100vw;
     text-align: right;
   }
+
   .main__title h1 {
     color: var(--black);
     text-shadow: -2px -2px 0 var(--white), 2px -2px 0 var(--white),
