@@ -5,6 +5,7 @@
 
 :root {
   --accent: #009688;
+  --background: #3F3C56;
   --black: #0d0d0d;
   --white: #f1f1f1;
   --gray: #8c8c8c;
@@ -22,7 +23,7 @@ html {
 }
 
 body {
-  font-family: 'Helvetica', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 1rem;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
@@ -33,13 +34,41 @@ body {
   background-size: 60%;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--white);
+  font-weight: bolder;
+}
+
+a:link {
+  color: var(--accent);
+  font-weight: bold;
+}
+
+a:active {
+  background-color: var(--background);
+  color: var(--white);
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+a:visited {
+  color: inherit;
+}
+
 h1 {
   font-size: 3em;
+  font-weight: 900;
   line-height: 1;
 }
 
 h2 {
   font-size: 1.25em;
+  font-variant: small-caps;
   line-height: 1;
 }
 
@@ -197,6 +226,12 @@ hr:after {
 }
 
 @media all and (max-width: 920px) {
+  a:link {
+    color: var(--white);
+    font-weight: bold;
+    font-style: italic;
+  }
+
   .main {
     flex-direction: column;
     margin: 0 4rem;
